@@ -1,0 +1,194 @@
+/* Arquivo responsável por dar estilo a página @author Cristiano Junior*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body {
+  font-family: 'Poppins', poppins;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.col {
+  grid-column: span 12;
+}
+
+.col-sm {
+  grid-column: span 6;
+}
+
+.col-md {
+  grid-column: span 4; 
+}
+
+.col-lg {
+  grid-column: span 3;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---  CSS do navbar --- */
+
+.navbar {
+  background: linear-gradient(to right, #c70000, #FFC300, #FF5733, #C70039);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #e3e3e3;
+}
+
+.navbar-brand:hover {
+  text-decoration: underline;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #e3e3e3;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---  CSS do navbar --- */
+
+/* ---  CSS dos inputs --- */
+
+.custom-input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: none;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  display: inline-block;
+  width: 80%;
+}
+
+.custom-input:focus {
+  border-color: #66afe9;
+}
+
+/* ---  CSS dos inputs --- */
+
+/* --- CSS do card --- */
+
+.card {
+  width: 300px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  border: 2px solid #7fb3d5;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  margin-bottom: 15px;
+}
+
+/* --- CSS do card --- */
+
+/* --- CSS do form --- */
+
+.form {
+  max-width: 700px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  display: block;
+  width: 150px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* --- CSS do form --- */
+
+/* --- CSS do resultado --- */
+
+.result {
+  max-width: 600px;
+}
+
+.error {
+  color: #c70000;
+  font-weight: bold;
+}
+
+.success {
+  color: #35910a;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* --- CSS do resultado --- */
